@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(bag.jpg);
+    width: 100%;
+    height: 90vh;
+    background-position: center;
+    background-size: cover;
+}
+nav {
+    display: flex;
+    padding: 15px 4%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    cursor: pointer;
+}
+nav img {
+    width: 10%;
+}
+.nav1 {
+    flex: 1;
+    text-align: right;
+}
+.nav1 ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 12px;
+    position: relative;
+}
+.nav1 ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    width: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.nav1 ul li a::after {
+    width: 0;
+    content: '';
+    height: 2px;
+    background: rgb(199, 59, 23);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav1 ul li a:hover::after {
+    width: 100%;
+}
+.des {
+    text-align: center;
+    color: white;
+    padding: 180px;
+    font-family: 'KoHo', sans-serif;
+}
+.des h1 {
+    font-size: 50px;
+    padding: 10px;
+}
+.des p {
+    font-size: 20px;
+}
+.des button{
+    font-size: 15px;
+    margin: 30px;
+    padding: 15px;
+    background: transparent;
+    border-color: white;
+    color: white;
+    border-radius: 15px;
+    width: 20%;
+    cursor: pointer;
+}
+.des button:hover {
+    background:rgb(199, 59, 23);
+    transition: 1s;
+}
